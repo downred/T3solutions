@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --nav-clr:#ebebeb;
+    --box-r: #f94144;
+    --box-g: #43AA8B;
+    --box-y: #F9C74F;
+    --box-b: #577590; 
+}
+
+body, html {
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* nav bar  */
+
+nav {
+    display: flex;
+    min-height: 60px;
+    background-color: var(--nav-clr);
+    align-items: center;
+}
+
+
+.logo {
+    width: 150px;
+    min-height: auto;
+    margin-left: 1em;
+}
+
+
+/* buttons  */
+
+.box-btn {
+    width: auto;
+    min-height: 162px;
+    border-radius: 30px;
+    position: relative;
+    border-bottom-right-radius:0;
+    border-bottom-left-radius: 0;
+    margin: 0 0 81px 0;
+}
+
+.box-btn::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    top: 162px;
+    min-height: 100px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: var(--nav-clr);
+    z-index: 1;
+}
+
+.box-red {
+    background-color: var(--box-r);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-red:hover {
+    animation: hover .5s;
+}
+
+.box-red::before {
+    content: url(./Icons/check-list.svg);
+    width: calc(117px - 7px);
+    min-height: calc(122px - 7px);
+}
+
+.box-green {
+    background-color: var(--box-g);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-green::before {
+    content: url(./Icons/scale.svg);
+    width: 135px;
+}
+
+.box-yellow {
+    background-color: var(--box-y);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-yellow::before {
+    content: url(./Icons/passport-ticket.svg);
+    width: 140px;
+}
+
+.box-blue {
+    background-color: var(--box-b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-blue::before {
+    content: url(./Icons/report.svg);
+    width: 100px;
+}
+
+.content {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 230px);
+    gap: 20px;
+    grid: 3/4;
+}
+
+/* main  */
+
+.main-wrapper {
+    min-height: 90vh;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 80vw;
+    grid-template-rows: 25% 5% 65%;
+    margin-bottom: 81px;
+}
+
+/* header  */
+
+.title-wrapper {
+    margin: 50px;
+    display: inline-block;
+    font-size: 1.3em;
+    text-align: center;
+    grid-row: 1/2;
+}
+
+/* SMALLER SCREENS  */
+
+@media screen and (max-width:1052px) {
+    .content {
+        grid-template-columns: repeat(2, 230px);
+        grid-gap: 100px 80px;
+    }
+
+    .main-wrapper {
+        grid-template-rows: 25% 5% 65%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    
+    .title-wrapper {
+        font-size: 1em;
+        margin: 30px;
+    }
+
+
+    nav {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:626px) {
+    .content {
+        grid-template-columns: repeat(auto-fit, 350px);
+        /* gap: 20px; */
+        grid-column-gap: 20px;
+    }
+
+    .box-btn {
+        min-height: 220px;
+    }
+
+    .box-btn::after {
+        width: 100%;
+        min-height: 135px;
+        top: 217px;
+    }
+
+}
+
+@media screen and (max-width:405px) {
+    .title-wrapper {
+        font-size: .8em;
+    }
+
+    /* .main-wrapper {
+        min-height: 100vh;
+    } */
+}
