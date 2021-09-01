@@ -229,6 +229,11 @@ a {text-decoration: none;}
         height: 180px;
         top: 200px;
     }
+
+    .title-wrapper {
+        font-size: .7em;
+        margin: 20px;
+    }
 }
 
 @media screen and (max-width:405px) {
