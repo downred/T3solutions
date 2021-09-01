@@ -195,7 +195,6 @@ a {text-decoration: none;}
         margin: 30px;
     }
 
-
     nav {
         justify-content: center;
     }
@@ -209,24 +208,27 @@ a {text-decoration: none;}
 @media screen and (max-width:626px) {
     .content {
         grid-template-columns: repeat(auto-fit, 350px);
-        grid-column-gap: 20px;
+        column-gap: 20px;
     }
 
     .box-btn {
         height: 200px;
     }
 
+    .text-wrapper {
+        top: 108%;
+    }
+
+    .yellow-position-fix {
+        top: 107% !important;
+        text-align: center;
+    }
+
     .box-btn::after {
         width: 100%;
         height: 180px;
         top: 200px;
-        z-index: 1;
     }
-
-    .button-container {
-        z-index: -1;
-    }
-
 }
 
 @media screen and (max-width:405px) {
