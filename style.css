@@ -207,7 +207,7 @@ a {text-decoration: none;}
 
 @media screen and (max-width:626px) {
     .content {
-        grid-template-columns: repeat(auto-fit, 300px);
+        grid-template-columns: repeat(auto-fit, 270px);
         column-gap: 20px;
     }
 
