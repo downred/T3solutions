@@ -29,8 +29,8 @@
     --list-cname-size: 15px;
 }
 
-html {
-    font-family: 'Montserrat', sans-serif;
+:not(i) {
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 body {
@@ -54,22 +54,14 @@ header {
     overflow: hidden;
 }
 
-.searchbar {
-    width: 427px;
-    height: 49px;
-    border-radius: 30px;
-    background-color: var(--secondary-clr);
+
+.search-wrapper {
+    /* height: 49px; */
+    /* background-color: var(--secondary-clr); */
     margin:0 0 0 55px;
-    position: relative;
-
+    /* position: relative; */
+    /* border: 0; */
 }
 
-.searchbar::after {
-    content: '';
-    width: 50px;
-    height: 100%;
-    left: 88.5%;
-    border-radius: 30px;
-    background-color: var(--primary-clr);
-    position: absolute;
-}
+
+
