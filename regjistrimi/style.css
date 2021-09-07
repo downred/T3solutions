@@ -39,6 +39,8 @@ body {
     background-color: var(--secondary-clr);
 }
 
+h2 {font-size: 0.95em;} 
+
 /* search bar container  */
 
 header {
@@ -61,6 +63,10 @@ header {
     margin:0 0 0 55px;
     /* position: relative; */
     /* border: 0; */
+}
+
+.search-icon {
+    max-height: 1.2rem;
 }
 
 
