@@ -29,45 +29,70 @@
     --list-cname-size: 15px;
 }
 
+html {height: 100%;}
+
 :not(i) {
     font-family: 'Montserrat', sans-serif !important;
 }
 
 body {
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     background-color: var(--secondary-clr);
 }
-
-h2 {font-size: 0.95em;} 
 
 /* search bar container  */
 
 header {
-
     background-color: #ffff;
 }
 
 .top-bar {
     background-color: #ffffff;
     display: flex;
-    min-height: 84px;
+    min-height: 12vh;
     align-items: center;
     overflow: hidden;
 }
 
 
 .search-wrapper {
-    /* height: 49px; */
-    /* background-color: var(--secondary-clr); */
-    margin:0 0 0 55px;
-    /* position: relative; */
-    /* border: 0; */
+    margin:0 0 0 3.4375rem;
 }
 
 .search-icon {
     max-height: 1.2rem;
 }
 
+/* page wrapper  */
 
+.page-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+    height: 100%;
+}
 
+/* regjistrimi  */
+
+.regjistrimi-wrapper>h2 {
+    font-size: var(--heading-size);
+    font-weight: var(--heading-weight);
+    margin: 0 0 0 .5em;
+}
+
+.regjistrimi-wrapper {
+    background-color: red;
+    height: auto;
+    margin: 2em;
+    width: auto;
+    position: relative;
+}
+
+.form-container {
+    background-color: blue;
+    position: absolute;
+    width: 100%;
+    min-height: 90%;
+}
