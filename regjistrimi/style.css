@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 :root {
@@ -15,28 +17,27 @@
     --textinput-clr: #909090;
     --list-item-clr: #6a6a6a;
 
+    /* 1.3125rem */
 
-    --heading-size: 21px;
+    --heading-size: 1.3125rem;
     --heading-weight: 400;
 
     --assistive-text-weight: 500;
-    --assistive-text-size: 10px;
+    --assistive-text-size: 0.625rem;
 
     --placeholder-weight: 500;
-    --placeholder-size: 12px;
+    --placeholder-size: 0.75rem;
 
     --list-cname-weight: 600;
-    --list-cname-size: 15px;
+    --list-cname-size: 0.9375rem;
+
+    --container-border-radius: 30px;
 }
 
-html {height: 100%;}
-
-:not(i) {
-    font-family: 'Montserrat', sans-serif !important;
-}
+html {font-family: 'Montserrat', sans-serif !important;}
 
 body {
-    height: 100%;
+    /* height: 100%; */
     /* width: 100%; */
     background-color: var(--secondary-clr);
 }
@@ -67,32 +68,61 @@ header {
 /* page wrapper  */
 
 .page-wrapper {
-    width: 100%;
     display: grid;
+    grid-template-rows: minmax(450px, auto) 80vh; 
     grid-template-columns: 100%;
-    grid-template-rows: 30% 70%;
-    height: 100%;
 }
 
 /* regjistrimi  */
 
-.regjistrimi-wrapper>h2 {
+h2 {
     font-size: var(--heading-size);
     font-weight: var(--heading-weight);
-    margin: 0 0 0 .5em;
+    margin: 0 0 .1em 1.2em;
 }
 
 .regjistrimi-wrapper {
-    background-color: red;
-    height: auto;
     margin: 2em;
-    width: auto;
-    position: relative;
+    max-height: auto;
 }
 
 .form-container {
-    background-color: blue;
+    height: 100%;
+    border-radius: var(--container-border-radius);
+    position: relative;
+    overflow-x: hidden;
+    box-shadow: 0px 9px 21px -1px rgba(0, 0, 0, 0.25);
+}
+
+.form-container::before {
+    content: '';
     position: absolute;
-    width: 100%;
-    min-height: 90%;
+    height: 100%;
+    width: 1.5%;
+    background-color: var(--primary-clr);
+}
+
+.container-fluid {
+    margin: 2em;
+}
+
+.row, .col {
+    width: inherit;
+    height: 100%;
+}
+
+.row {
+    padding-bottom: 2em;
+}
+
+/* list  */
+
+.list-wrapper {
+    background-color: green;
+    margin: 2em;
+}
+
+.list {
+    overflow-x: scroll;
+    min-height: auto;
 }
