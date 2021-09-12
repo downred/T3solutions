@@ -115,6 +115,10 @@ h2 {
     padding-bottom: 2em;
 }
 
+.form-label {
+    overflow: hidden;
+}
+
 /* list  */
 
 .list-wrapper {
