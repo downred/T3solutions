@@ -137,6 +137,7 @@ header {
 .list {
     overflow-x: scroll;
     min-height: auto;
+    margin: 0 0 2em 0;
 }
 
 table {
