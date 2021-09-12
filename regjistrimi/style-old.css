@@ -37,14 +37,9 @@
 html {font-family: 'Montserrat', sans-serif !important;}
 
 body {
+    /* height: 100%; */
+    /* width: 100%; */
     background-color: var(--secondary-clr);
-}
-
-h2 {
-    font-size: var(--heading-size);
-    font-weight: var(--heading-weight);
-    margin: 0 0 .1em 1.2em; 
-    padding: 0 0 .4em 0;
 }
 
 /* search bar container  */
@@ -80,6 +75,12 @@ header {
 
 /* regjistrimi  */
 
+h2 {
+    font-size: var(--heading-size);
+    font-weight: var(--heading-weight);
+    margin: 0 0 .1em 1.2em;
+}
+
 .regjistrimi-wrapper {
     margin: 2em;
     max-height: auto;
@@ -101,50 +102,27 @@ header {
     background-color: var(--primary-clr);
 }
 
-.row-margin {
-    margin: 0em 3em 0em 0em;
-}
-
-.submit-margin {
-    margin: 1.6em 0 0 14em;
-}
-
 .container-fluid {
     margin: 2em;
 }
 
-.mybox {
-    background-color: rebeccapurple;
-    margin: 1em 0 0 0;
-    width: 100%;
+.row, .col {
+    width: inherit;
     height: 100%;
 }
 
 .row {
-    padding-bottom: 1em;
+    padding-bottom: 2em;
 }
 
 /* list  */
 
 .list-wrapper {
+    background-color: green;
     margin: 2em;
 }
 
 .list {
     overflow-x: scroll;
     min-height: auto;
-}
-
-table {
-    border-top: 1px solid rgba(0, 0, 0, 0.25);
-}
-
-th {
-    white-space: nowrap;
-    padding: 2em 1em!important;
-}
-
-td {
-    padding: 2em 2em !important;
-    white-space: nowrap;
 }
