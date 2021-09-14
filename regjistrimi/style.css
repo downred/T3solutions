@@ -12,9 +12,6 @@
     --primary-clr: #4E73DF;
     --secondary-clr: #e7e7e7;
     --tertiary-clr: #646464;
-    --list-hover-clr: #e0e0e0;
-    --input-placeholder-clr: #7e7e7e;
-    --textinput-clr: #909090;
     --list-item-clr: #6a6a6a;
 
     /* 1.3125rem */
@@ -142,10 +139,27 @@ header {
 
 th {
     white-space: nowrap;
-    padding: 2em 1em!important;
+    padding: 2em 1em !important;
+    color: var(--list-item-clr);
+    font-weight: var(--list-cname-weight);
 }
 
 td {
     padding: 2em 2em !important;
     white-space: nowrap;
+}
+
+.table-text-clr {
+    color: var(--list-item-clr);
+}
+
+.list-btn {
+    border-radius: 4px;
+    width: 2.5em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-clr);
+    background-color: var(--primary-clr);
 }
