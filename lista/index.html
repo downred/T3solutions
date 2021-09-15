@@ -15,126 +15,21 @@
     <title>Lista e pagave</title>
   </head>
   <body>
-    <header>
-      <div class="top-bar">
-        <div class="search-wrapper">
-          <form
-            class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Kërko punëtorët..."
-                aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                <img src="https://gitcdn.link/repo/downred/T3solutions/main/regjistrimi/Icons/search.svg" alt="" class="search-icon">
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </header>
     <main>
       <div class="page-wrapper">
-        <!-- REGJISTRIMI FORM  -->
+        <!-- KERKO LISTEN  -->
         <div class="regjistrimi-wrapper">
-          <h2>Regjistrimi i punëtorëve</h2>
+          <h2>Kërko</h2>
           <div class="form-container">
             <form class="needs-validation" novalidate> 
               <div class="container-fluid container-outline p-0">
-                  <div class="row row-margin">
-                      <div class="col-9">
-                          <div class="row">
-                              <div class="col">
-                                  <label for="emri" class="form-label text-xs font-weight-bold text-primary text-uppercase mb-1">EMRI</label>
-                                  <input type="text" class="form-control" id="emri" required>
-                              </div>
-                              <div class="col">
-                                  <label for="email" class="form-label text-xs font-weight-bold text-primary text-uppercase mb-1">Email</label>
-                                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
-                              </div>
-                              <div class="col">
-                                  <label for="mdate" class="text-xs font-weight-bold text-primary text-uppercase mb-1">Data e mbarimit të punës</label>
-                                  <input name="date" class="form-control" type="date" value="" id="mdate" required>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col">
-                                  <label for="mbiemri" class="form-label text-xs font-weight-bold text-primary text-uppercase mb-1">MBIEMRI</label>
-                                  <input type="text" class="form-control" id="mbiemri" required>
-                              </div>
-                              <div class="col">
-                                  <label for="puna" class="form-label text-xs font-weight-bold text-primary text-uppercase mb-1">Puna primare</label>
-                                  <input type="text" class="form-control" id="puna" required>
-                              </div>
-                              <div class="col">
-                                  <label for="vazhdimi" class="form-label text-xs font-weight-bold text-primary text-uppercase mb-1">vazhdimi për</label>
-                                  <select class="form-select" aria-label="Default select example" id="vazhdimi">
-                                    <option value="1" selected>Muaj</option>
-                                    <option value="2">Vite</option>
-                                  </select>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col">
-                                  <label for="bdate" class="text-xs font-weight-bold text-primary text-uppercase mb-1">Data e lindjes</label>
-                                  <input name="date" class="form-control" type="date" value="" id="bdate">
-                              </div>
-                              <div class="col">
-                                  <label for="departamenti" class="form-label text-xs font-weight-bold text-primary text-uppercase mb-1">DEPARTAMENTI</label>
-                                  <select class="form-select" aria-label="Default select example" id="departamenti">
-                                  <option selected>Open this select menu</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                  </select>
-                              </div>
-                              <div class="col">
-                                  <label for="ccn" class="form-label text-xs font-weight-bold text-primary text-uppercase mb-1">LLOGARIA BANKARE</label>
-                                  <input class="form-control" id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col">
-                                  <label for="id" class="form-label text-xs font-weight-bold text-primary text-uppercase mb-1">ID</label>
-                                  <input type="text" class="form-control" id="id" required>
-                              </div>
-                              <div class="col">
-                                  <label for="fdate" class="text-xs font-weight-bold text-primary text-uppercase mb-1">Data e fillimit të punës</label>
-                                  <input name="date" class="form-control" type="date" value="" id="fdate">
-                              </div>
-                              <div class="col">
-                                  <label for="currency-field" class="text-xs font-weight-bold text-primary text-uppercase mb-1">paga bazë</label>
-                                  <input type="text" name="currency-field-pbaze" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="€0,00" class="form-control"> 
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-3">
-                          <div class="row">
-                              <div class="col">
-                                  <label for="currency-field-perore" class="text-xs font-weight-bold text-primary text-uppercase mb-1">pagesa për orë</label>
-                                  <input type="text" name="currency-field-perore" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="€0,00" class="form-control">  
-                              </div>
-                          </div>
-                          <div class="row h-50 justify-content-center">
-                              <div class="col">
-                                  <div class="mybox"></div>
-                              </div>
-                          </div>
-                          <div class="row justify-content-end">
-                              <div class="col submit-margin">
-                                  <button class="btn btn-primary" type="submit">Regjistro</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
               </div>
             </form>
           </div>
         </div>
 
-        <!-- LISTA E PUNETOREVE  -->
+        <!-- LISTA E PAGAVE -->
         <div class="list-wrapper">
-          <h2>Lista e punëtorëve</h2>
           <div class="list">
             <table class="table table-hover text-center">
               <thead>
