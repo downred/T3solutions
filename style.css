@@ -42,7 +42,7 @@ nav {
     z-index: 0;
     position: absolute;
     top: 120%;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 a {text-decoration: none;}
@@ -220,7 +220,7 @@ a {text-decoration: none;}
     }
 
     .yellow-position-fix {
-        top: 107% !important;
+        top: 100% !important;
         text-align: center;
     }
 
