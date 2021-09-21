@@ -37,16 +37,13 @@ body {
     background-color: var(--secondary-clr);
 }
 
-
-
-.page-wrapper {
-    width: 100%;
-}
-
 /* inner wrapper  */
 
 .inner-wrapper {
     background-color: var(--secondary-clr);
+    /* min-height: 120vh;
+    display: grid;
+    grid-template-rows: 50% 50% */
     /* width: 98%; */
 }
 
@@ -78,7 +75,7 @@ th {
 }
 
 td {
-    padding: 2em 2em !important;
+    /* padding: 2em 2em !important; */
     white-space: nowrap;
 }
 
