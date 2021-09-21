@@ -14,6 +14,7 @@
     --tertiary-clr: #646464;
     --list-item-clr: #6a6a6a;
     --search-btn-clr: #b8b8b8;
+    --search-bg: #d6d6d6;
 
     --heading-size: 1.3125rem;
     --heading-weight: 400;
@@ -46,21 +47,14 @@ body {
 
 .inner-wrapper {
     background-color: var(--secondary-clr);
-    width: 98%;
-}
-
-.btn-wrapper {
-    padding-left: 15%;
+    /* width: 98%; */
 }
 
 /* search  */
 
-.input-group {
-    /* margin: 1rem 3rem 0 3rem; */
-}
 
 .search-bg {
-    background-color: rgb(214, 214, 214) !important;
+    background-color: var(--search-bg) !important;
 }
 
 
@@ -93,9 +87,9 @@ td {
 }
 
 /* media queries  */
-
+/* 
 @media screen and (max-width:1350px) {
     .col-margin {
         padding: 0 4em 0 0;
     }
-}
+} */
