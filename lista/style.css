@@ -36,67 +36,33 @@ body {
     background-color: var(--secondary-clr);
 }
 
-h2 {
-    font-size: var(--heading-size);
-    font-weight: var(--heading-weight);
-    margin: 0 0 .1em 1.2em; 
-    padding: 0 0 .4em 0;
-}
 
-/* page wrapper  */
 
 .page-wrapper {
-    display: grid;
-    grid-template-rows: minmax(150px, auto) 80vh; 
-    grid-template-columns: 100%;
+    width: 100%;
 }
 
-/* regjistrimi  */
+/* inner wrapper  */
 
-.regjistrimi-wrapper {
-    margin: 2em;
-    max-height: auto;
+.inner-wrapper {
+    background-color: var(--secondary-clr);
+    width: 98%;
 }
 
-.form-container {
-    height: 90%;
-    border-radius: var(--container-border-radius);
-    position: relative;
-    overflow-x: hidden;
-    box-shadow: 0px 9px 21px -1px rgba(0, 0, 0, 0.25);
+.btn-wrapper {
+    padding-left: 15%;
 }
 
-.form-container::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 1.3em;
-    background-color: var(--primary-clr);
+/* search  */
+
+.input-group {
+    /* margin: 1rem 3rem 0 3rem; */
 }
 
-.submit-margin {
-    margin: 1.6em 0 0 100%;
+.search-bg {
+    background-color: rgb(214, 214, 214) !important;
 }
 
-.container-fluid {
-    margin: 2em;
-}
-
-.row-margin {
-    padding-right: 3em;
-}
-
-.col-margin {padding: 0 6rem 0 0;}
-
-.container-margin {
-    margin-left: 4rem;
-    padding-right: 5rem;
-}
-
-.search-button {
-    border: 0;
-    color: var(--search-btn-clr);
-}
 
 /* list  */
 
