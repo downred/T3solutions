@@ -15,6 +15,7 @@
     --list-item-clr: #6a6a6a;
     --search-btn-clr: #b8b8b8;
     --search-bg: #d6d6d6;
+    --modal-bg: rgba(0,0,0,.7);
 
     --heading-size: 1.3125rem;
     --heading-weight: 400;
@@ -41,10 +42,6 @@ body {
 
 .inner-wrapper {
     background-color: var(--secondary-clr);
-    /* min-height: 120vh;
-    display: grid;
-    grid-template-rows: 50% 50% */
-    /* width: 98%; */
 }
 
 /* search  */
@@ -75,7 +72,6 @@ th {
 }
 
 td {
-    /* padding: 2em 2em !important; */
     white-space: nowrap;
 }
 
@@ -83,10 +79,46 @@ td {
     color: var(--list-item-clr);
 }
 
-/* media queries  */
-/* 
-@media screen and (max-width:1350px) {
-    .col-margin {
-        padding: 0 4em 0 0;
-    }
-} */
+/* modal  */
+
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: var(--modal-bg);
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.regjistrimi-wrapper {
+    margin: 2em;
+    max-height: auto;
+}
+
+.row-margin {
+    margin: 0em 3em 0em 0em;
+}
+
+.submit-margin {
+    margin: 1.6em 0 0 100%;
+}
+
+.mybox {
+    background-color: rebeccapurple;
+    margin: 1em 0 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    padding-bottom: 1em;
+}
+
+.form-label {
+    overflow: hidden;
+}
